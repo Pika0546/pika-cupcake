@@ -23,7 +23,7 @@ const changeSection = id =>{
     }
 }
 
-changeSection("order-online");
+changeSection("home");
 
 document.querySelector(".close-nav").addEventListener("click", function(){
     document.querySelector(".navigation").style.display = "none";
