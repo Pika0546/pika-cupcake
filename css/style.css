@@ -973,11 +973,10 @@ img {
   padding: 1.8rem; }
   .contact__content .row--1 {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: auto auto;
     grid-gap: 4%; }
-    @media (max-width: 575px) {
-      .contact__content .row--1 {
-        grid-template-columns: auto; } }
+    .contact__content .row--1 .contact__left img {
+      display: block; }
     .contact__content .row--1 .contact__right {
       margin-top: 3rem; }
       .contact__content .row--1 .contact__right .contact__header {
@@ -996,6 +995,7 @@ img {
           height: 2.2rem;
           padding: 0 1rem;
           border: 1px solid cyan;
+          display: block;
           margin-bottom: .7rem; }
           .contact__content .row--1 .contact__right .contact__form form input:not(:last-child):hover, .contact__content .row--1 .contact__right .contact__form form input:not(:last-child):focus {
             border: 2px solid #00a2ff; }
