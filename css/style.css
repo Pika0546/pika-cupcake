@@ -973,8 +973,11 @@ img {
   padding: 1.8rem; }
   .contact__content .row--1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 48% 48%;
     grid-gap: 4%; }
+    @media (max-width: 575px) {
+      .contact__content .row--1 {
+        grid-template-columns: auto; } }
     .contact__content .row--1 .contact__left img {
       display: block; }
     .contact__content .row--1 .contact__right {
